@@ -1,0 +1,112 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+p {
+    font-family: "PT Mono"
+}
+
+a {
+    text-decoration: none;
+}
+
+#container {
+    background-image: url(images/SPACE_2_RED.png);
+    height: 100vh;
+    width: 100vw;
+    background-size: contain;
+    display: flex;
+}
+
+#title-block {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+#title-text {
+    color: #e2e1e1;
+    font-size: 150px;
+    width: fit-content;
+    height: 160px;
+    font-family: impact, sans-serif;
+    vertical-align: middle;
+    margin-left: 60px;
+}
+
+#title-subtitle-text {
+    color: #e2e1e1;
+    width: fit-content;
+    vertical-align: middle;
+    font-family: 'Roboto Slab', serif;
+    font-size: 40px;
+    margin-left: 60px;
+}
+
+#nav-container {
+    position: relative;
+    position: absolute;
+    right: -0px;
+    bottom: 0;
+    height: 100vh;
+    width: 500px;
+}
+
+#nav-title {
+    position: absolute;
+    color: #e2e1e1;
+    margin-top: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 4px;
+    background-color: #322d2d76;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 40px;
+    height: fit-content;
+    top: 10px;
+    left: -68px;
+}
+
+#nav-content {
+    padding: 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 398px;
+    height: 100vh;
+    background-color: #1413136a;
+    border-left: #322d2d76 5px solid;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-sizing: border-box;
+}
+
+#nav-container:hover {}
+
+#project {
+    font-size: 0px;
+}
+
+.project-icon {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.project-description {
+    background-color: #212020a6;
+    font-size: 20px;
+    color: #ffffffa6;
+}
