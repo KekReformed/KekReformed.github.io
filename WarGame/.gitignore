@@ -1,0 +1,4 @@
+node_modules
+public/*.js
+.vscode
+public-menu/*.js
