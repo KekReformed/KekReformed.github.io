@@ -1,0 +1,50 @@
+body {
+    background-color: #131212;
+    height: 100%;
+}
+
+h1{
+  color:yellow;
+  font-size:50px;
+  font-family:Goudy, Stout;
+}
+h2{
+  color: white;
+  font-size:20px;
+  font-family: Kristen, ITC
+}
+
+.counts {
+  color: #919191;
+}
+
+.costs {
+  color: #919191;
+}
+
+.div_1 {
+  text-align:left;
+  height: 10px;
+  width: 100%;
+}
+.Clickable_Cheese {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100px;
+  animation: rotation 1s infinite linear;
+  width:100px;
+  height:100px
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+.Cheeseoutput{
+  color:#919191;
+  font-size:25px
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="cheese-clicker-original.css" rel="stylesheet">
+  </head>
+<body>
+<script>
+  {
+   var x = 0
+   var cmc = 0
+   var cheesemakerprice = 50
+   var clickmult=1
+   var clickmultcost= 35
+   var cheesefactorycount = 0
+   var cheesefactorycost = 150
+   var cheesefactoryfactorycount = 0
+   var cheesefactoryfactorycost = 1000
+   cheesemaker()
+   cheesefactory()
+   cheesefactoryfactory()
+  }
+  function cheesegain(amount)
+  {
+    x=x+amount
+    document.getElementById("cheese").innerHTML = x+" Cheese"
+  }
+  function cheesefactorygain(amount)
+  {
+    cheesefactorycount+=amount
+    document.getElementById("cheesefactorycount").innerHTML = "Cheese Factories: "+cheesefactorycount
+  }
+  function cheesefactoryfactory()
+  {
+    setInterval(function(){cheesefactorygain(cheesefactoryfactorycount); x = Math.round(x + Number.EPSILON)}, 10000)
+  }
+  function cheesemaker()
+  {
+    setInterval(function(){cheesegain(cmc); x = Math.round(x + Number.EPSILON)}, 1000)
+  }
+  function cheesefactory()
+  {
+    setInterval(function(){cheesegain(cheesefactorycount*4); x = Math.round(x + Number.EPSILON)}, 1000)
+  }
+  function cheesefactorycostinc()
+  {
+    if (x >= cheesefactorycost) {
+      cheesefactorycount++
+      x-=cheesefactorycost
+      cheesefactorycost*=1.15;
+      x = Math.round((x + Number.EPSILON) * 100) / 100
+      cheesefactorycost = Math.round((cheesefactorycost + Number.EPSILON) * 100) / 100
+      }
+    document.getElementById("cheesefactorycost").innerHTML = "Cheese factory costs: "+cheesefactorycost
+    document.getElementById("cheesefactorycount").innerHTML = "Cheese Factories: "+cheesefactorycount
+    document.getElementById("cheese").innerHTML = x+" Cheese";
+  }
+  function cheesefactoryfactorycostinc()
+  {
+    if (x >= cheesefactoryfactorycost) {
+      cheesefactoryfactorycount++
+      x-=cheesefactoryfactorycost
+      cheesefactoryfactorycost*=1.3;
+      x = Math.round((x + Number.EPSILON) * 100) / 100
+      cheesefactoryfactorycost = Math.round((cheesefactoryfactorycost + Number.EPSILON) * 100) / 100
+      }
+    document.getElementById("cheesefactoryfactorycost").innerHTML = "Cheese FactoryFactory costs: "+cheesefactoryfactorycost
+    document.getElementById("cheesefactoryfactorycount").innerHTML = "Cheese FactoryFactories: "+cheesefactoryfactorycount
+    document.getElementById("cheese").innerHTML = x+" Cheese";
+  }
+  function cheesemakercostinc()
+  {
+    if (x >= cheesemakerprice) {
+      cmc++
+      x-=cheesemakerprice
+      cheesemakerprice*=1.10;
+      x = Math.round((x + Number.EPSILON) * 100) / 100
+      cheesemakerprice = Math.round((cheesemakerprice + Number.EPSILON) * 100) / 100
+      }
+    document.getElementById("cheesemakercost").innerHTML = "Cheese maker costs: "+cheesemakerprice
+    document.getElementById("cheesemakercount").innerHTML = "Cheese makers: "+cmc
+    document.getElementById("cheese").innerHTML = x+" Cheese";
+  }
+  function clickmultiplier() {
+    if (x >= clickmultcost) {
+      clickmult++
+      x-=clickmultcost
+      clickmultcost*=1.20;
+      clickmultcost = Math.round((clickmultcost + Number.EPSILON) * 100) / 100
+      }
+    document.getElementById("clickmultcost").innerHTML = "Click Multiplier: "+clickmult
+    document.getElementById("clickmultcount").innerHTML = "Click Multiplier costs: "+clickmultcost
+    document.getElementById("cheese").innerHTML = x+" Cheese";
+  }
+</script>
+<h1> Cheese</p></h1>
+<div class="div_1">
+  <h2> this page is all about cheese clicker!</h2>
+  <input class ="Clickable_Cheese" type="image" src="https://media.istockphoto.com/photos/cheddar-cheese-isolated-on-white-picture-id1254075371?k=6&m=1254075371&s=612x612&w=0&h=yj_zUIdkFkNdamgKwtg1Z9vslMxlD50pI5-1muE1BdM=" / onclick = "cheesegain(clickmult)">
+  <p id="cheese" class="Cheeseoutput"></p>
+  <input class="Cheeseclickmult" type="button" value="Buy Click Multiplier" onclick ="clickmultiplier()" >
+  <input class="Cheesmaker_upgrade" type="button" value="Buy Cheese maker Upgrade" onclick ="cheesemakercostinc()" >
+  <input class="Cheesefactoryfactory" type="button" value="Buy Cheese factoryfactory" onclick ="cheesefactoryfactorycostinc()" >
+  <input class="Cheese_factory_upgrade" type="button" value="Buy Cheese factory" onclick ="cheesefactorycostinc()" >
+  <p id="cheesemakercost" class="costs">
+  <p id="cheesemakercount" class="counts">
+  <p id="cheesefactorycost" class="costs">
+  <p id="cheesefactorycount" class="counts">
+  <p id="clickmultcount" class="costs">
+  <p id="clickmultcost" class="counts">
+  <p id="cheesefactoryfactorycost" class="costs">
+  <p id="cheesefactoryfactorycount" class="counts">
+  <script>
+    document.getElementById("cheese").innerHTML = x+" Cheese"
+     document.getElementById("cheesemakercost").innerHTML = "Cheese maker costs: "+cheesemakerprice
+    document.getElementById("cheesemakercount").innerHTML = "Cheese makers: "+cmc
+    document.getElementById("clickmultcost").innerHTML = "Click Multiplier: "+clickmult
+    document.getElementById("clickmultcount").innerHTML = "Click Multiplier costs: "+clickmultcost
+    document.getElementById("cheesefactorycost").innerHTML = "Cheese factory costs: "+cheesefactorycost
+    document.getElementById("cheesefactorycount").innerHTML = "Cheese Factories: "+cheesefactorycount
+    document.getElementById("cheesefactoryfactorycost").innerHTML = "Cheese FactoryFactory costs: "+cheesefactoryfactorycost
+    document.getElementById("cheesefactoryfactorycount").innerHTML = "Cheese FactoryFactories: "+cheesefactoryfactorycount
+  </script>
+  </div>
+  </body>
+</html>
