@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+p{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.fade:hover{
+    opacity:0.8;
+    cursor: pointer;
+}
+
+.unfade{
+   opacity:1;
+   cursor: pointer;
+}
+
+.hidden{
+    display: none;
+}
+
+#augments-title{
+    position: absolute;
+    color: gold;
+    top:0%;
+    right:10%;
+    margin: 0;
+}
+
+#augments-list-container-closed{
+    position:absolute;
+    width:25%;
+    height:22%;
+    bottom:6%;
+    right:2%;
+    margin:0;
+
+    border:0.3vw solid #b40000;
+    border-radius:40px;
+
+    color:gold;
+    text-align:center;
+    font-size:0.85vw;
+    user-select: none;
+}
+
+#augments-list-container-open{
+    position:absolute;
+    width:80%;
+    height:80%;
+    top:100%;
+    right:2%;
+    margin:0;
+
+    border:0.3vw solid #b40000;
+    border-radius:40px;
+
+    color:gold;
+    text-align:center;
+    font-size:0.85vw;
+    user-select: none;
+}
+

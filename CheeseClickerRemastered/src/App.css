@@ -1,0 +1,21 @@
+body{
+  background-color: #131414;
+  height:100%;
+  width:100%;
+}
+
+#line{
+  border-left:6px solid #ca1212;
+  height:100vh;
+  position: absolute;
+  right: 25.5%;
+  top: 0;
+}
+
+#horizontal-line{
+  border-top:6px solid #ca1212;
+  width: 25.5vw;
+  position: absolute;
+  right: 0;
+  top: 4.5%;
+}

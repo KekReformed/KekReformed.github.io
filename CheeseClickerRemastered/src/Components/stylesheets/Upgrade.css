@@ -1,0 +1,134 @@
+
+.fade:hover{
+    opacity:0.8;
+    cursor: pointer;
+}
+
+.unfade{
+   opacity:1;
+   cursor: pointer;
+}
+
+#upgrade{
+    position: relative;
+    width:95%;
+    min-height:12%;
+    right:0%;
+    top:0%;
+
+    background-color: #222020;
+
+    border:5px solid #b40000;
+    border-radius:10px;
+
+    margin: 0;
+    margin-top:10px;
+}
+
+#upgrade-count{
+    position:absolute;
+    width:25%;
+    height:20%;
+    right:2.5%;
+    top:5%;
+    margin:0;
+
+    color:#969292;
+    font-size: 0.85vw;
+    text-align: right;
+}
+
+#upgrade-name{
+    position:absolute;
+    width:80%;
+    height:5%;
+    left:2%;
+    top:5%;
+    margin:0;
+
+    color:gold;
+    font-size: 1.1vw;
+}
+
+#upgrade-output{
+    position:absolute;
+    width:50%;
+    height:20%;
+    left:25%;
+    bottom:5%;
+    margin:0;
+
+    color:#969292;
+    font-size: 0.85vw;
+    text-align: left;
+}
+
+#upgrade-description{
+    position:absolute;
+    width:80%;
+    height:5%;
+    left:2%;
+    top:35%;
+    margin:0;
+
+    color:#969292;
+    font-size: 0.85vw;
+    ;
+}
+
+#cost{
+    position:absolute;
+    width:80%;
+    height:20%;
+    left:8%;
+    bottom:5%;
+    margin:0;
+
+    color:#969292;
+    font-size: 0.85vw;
+}
+
+#cheese-icon{
+    position: absolute;
+    width: 7%;
+    height: auto;
+    left: 1%;
+    bottom: 3%;
+    border-radius: 0px;
+
+    user-select: none;
+}
+
+#buy-button{
+    position:absolute;
+    width:10%;
+    height:22%;
+    bottom:40%;
+    right:2%;
+    margin:0;
+
+    border:0.3vw solid #b40000;
+    border-radius:40px;
+
+    color:gold;
+    text-align:center;
+    font-size:0.85vw;
+    user-select: none;
+}
+
+#augments-button{
+    position:absolute;
+    width:25%;
+    height:22%;
+    bottom:6%;
+    right:2%;
+    margin:0;
+
+    border:0.3vw solid #b40000;
+    border-radius:40px;
+
+    color:gold;
+    text-align:center;
+    font-size:0.85vw;
+    user-select: none;
+}

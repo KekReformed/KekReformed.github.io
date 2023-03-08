@@ -1,0 +1,38 @@
+.menu-button {
+    border:0.3vw solid #b40000;
+    border-radius:40px;
+
+    color:gold;
+    text-align:center;
+    font-size:1vw;
+    user-select: none;
+
+    background-color: #222020;
+}
+
+.menu-button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.menu-button:active {
+    opacity: 1;
+}
+
+#upgrade-menu-button {
+    position:absolute;
+    width:10%;
+    height:2.45%;
+    top:0.5%;
+    right:14%;
+    margin:0;
+}
+
+#augments-menu-button {
+    position:absolute;
+    width:10%;
+    height:2.45%;
+    top:0.5%;
+    right:1%;
+    margin:0;
+}
